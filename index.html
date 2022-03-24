@@ -5,43 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="CSS/mystyle.css">
 </head>
 <body>
 <!-- nav HTML-->
-<section id="navbar">
-    <div id="headerimg">
-        <img src="/Photos_Hompage/logo_light_img.png" alt="logolight">
+<header class="navigation">
+    <div class="header">
+    <div class="inline-block" class="logo">
+        <img class="logoimg" src="/UX_UI_HW_17/Images/logo_light_img.png" alt="logolight">
     </div>
-    <div class="header_right">
-        <a href="#" id="headerwork">Work</a>
-        <a href="#" id="headerabout">About</a>
-        <a href="#" id="headerresume">Resume</a>
-        <a href="#" id="headercontact">Contact</a>
+    <nav class="inline-block">
+        <ul>
+            <li class="inline-block">Work</li>
+            <li class="inline-block">About</li>
+            <li class="inline-block">Resume</li>
+            <li class="inline-block">Contact</li>
+        </ul>
+    </nav>
     </div>
-</section>
-<!--title HTML-->
-<section id="hero_grid">
-    <div class="hero_img">
-        <img src="/Photos_Hompage/title_image.png" alt="hero_img">
-    </div>
-    <div class="hero_text">
-        <h4>Hi, I am</h4>
-        <h1>Kayla Furman</h1>
-        <h4>User Experience Designer</h4>
-    </div>
-    <div class="social_buttons" id="hero_social_buttons">
-        <a href="#"><img src="/Photos_Hompage/insta_img.png" alt="instagram_logo"></a>
-        <a href="#"><img src="/Photos_Hompage/twit_img.png" alt="twitter_logo"></a>
-        <a href="#"><img src="/Photos_Hompage/link_img.png" alt="linkdin_logo"></a>
-        <a href="#"><img src="/Photos_Hompage/gh_img.png" alt="github_logo"></a>
-    </div>
-    <div class="buttons">
-        <button id="contact_me">Contact Me</button>
-        <button id="portfolio">Portfolio</button>
-    </div>
-</section>
-<!--main HTML-->
+<!--Hero HTML-->
+    <section class="hero">
+        <div class="content heroimg">
+            <img src="/UX_UI_HW_17/Images/title_image.png" alt="hero_img">
+        </div>
+        <div class="herotext">
+            <h4>Hi, I am</h4>
+            <h1>Kayla Furman</h1>
+            <h4>User Experience Designer</h4>
+            <a href="#"><img class="social" src="/UX_UI_HW_17/Images/insta_img.png" alt="instagram_logo"></a>
+            <a href="#"><img class="social" src="/UX_UI_HW_17/Images/twit_img.png" alt="twitter_logo"></a>
+            <a href="#"><img class="social" src="/UX_UI_HW_17/Images/link_img.png" alt="linkdin_logo"></a>
+            <a href="#"><img class="social" src="/UX_UI_HW_17/Images/gh_img.png" alt="github_logo"></a>
+            <button id="contact_me">Contact Me</button>
+            <button id="portfolio">Portfolio</button>
+        </div>
+    </section>
+</header>
+<!-- main HTML-->
 <section id="bodygrid">
     <div class="body">
         <h1 id="body_title">Some things about me</h1>
@@ -58,7 +58,7 @@
 </section>
 <section id="whatido_grid">
     <h2>What I do</h2>
-    <img src="/Photos_Hompage/body_img.png" alt="body_img">
+    <img src="/UX_UI_HW_17/Images/body_img.png" alt="body_img">
     <div id="pink_hori_shape"></div>
     <div class="homepage_card">
         <h3>User Research</h3>
@@ -77,13 +77,13 @@
     <div class="portfolio-right">
         <h2>Marian House Redesign</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pellentesque maecenas nascetur rhoncus nunc dolor, pharetra faucibus aenean. Lectus eget sit commodo volutpat. Nisi quis morbi elit lacus. Orci, id pharetra odio mauris. Dolor eget auctor sed felis sit nunc odio leo.</p>
-        <img src="/Photos_Hompage/cs1_img.png" alt="MarianHouseRedesign">
+        <img src="/UX_UI_HW_17/Images/cs1_img.png" alt="MarianHouseRedesign">
         <button class="buttons" id="learn_more">Learn More</button>
     </div>
     <div class="portfolio-left">
         <h2>Case Study 2</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pellentesque maecenas nascetur rhoncus nunc dolor, pharetra faucibus aenean. Lectus eget sit commodo volutpat. Nisi quis morbi elit lacus. Orci, id pharetra odio mauris. Dolor eget auctor sed felis sit nunc odio leo.</p>
-        <img src="/Photos_Hompage/cs1_img.png" alt="CS2">
+        <img src="/UX_UI_HW_17/Images/cs1_img.png" alt="CS2">
         <button class="buttons" id="learn_more">Learn More</button>
     </div>
     <div class="buttons">
@@ -91,22 +91,18 @@
     </div>
 </section>
 <!--footer HTML-->
-<footer>
-    <section id="footer_grid">
-        <div class="footer">
-            <img src="/Photos_Hompage/footer_img.png" alt="footer_img">
-            <h1>Let's Connect</h1>
-            <h4>I am looking to join a team focused on improving the lives of the people around them.</h4>
-            <h3>kfurman2@outlook.com</h3>
-            <div class="social_buttons" id="footer_social_buttons">
-                <a href="#"><img src="/Photos_Hompage/insta_img.png" alt="instagram_logo"></a>
-                <a href="#"><img src="/Photos_Hompage/twit_img.png" alt="twitter_logo"></a>
-                <a href="#"><img src="/Photos_Hompage/link_img.png" alt="linkdin_logo"></a>
-                <a href="#"><img src="/Photos_Hompage/gh_img.png" alt="github_logo"></a>
-            </div>
-        </div>
-        <div id="pink_vert_shape"></div>
-    </section>
+<footer class="heroimg">
+    <img id="footerimg" src="/UX_UI_HW_17/Images/footer_img.png" alt="footer_img">
+    <h1 class="footertext" id="lc">Let's Connect</h1>
+    <h4 class="footertext" id="jt">I am looking to join a team focused on improving the lives of the people around them.</h4>
+    <h3 class="footertext" id="email">kfurman2@outlook.com</h3>
+    <div class="social_buttons" id="footer_social_buttons">
+        <a href="#"><img src="/UX_UI_HW_17/Images/insta_img.png" alt="instagram_logo"></a>
+        <a href="#"><img src="/UX_UI_HW_17/Images/twit_img.png" alt="twitter_logo"></a>
+        <a href="#"><img src="/UX_UI_HW_17/Images/link_img.png" alt="linkdin_logo"></a>
+        <a href="#"><img src="/UX_UI_HW_17/Images/gh_img.png" alt="github_logo"></a>
+    </div>
+    <div id="pink_vert_shape"></div>
 </footer>
 <!--end-->
 </body>
